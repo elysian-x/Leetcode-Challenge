@@ -1,0 +1,22 @@
+class Solution {
+    public int maxDepth(String s) {
+        int max=0;
+        char c[]=s.toCharArray();
+        for(int i=0;i<s.length();i++){
+                int open=0,close=0;
+                for(int j=0; j<=i;j++){
+                    if(c[j]=='('){
+                        open++;
+                    }
+                    else if(c[j]==')'){
+                        close++;
+                    }
+                    if(max<open-close){
+                        max=open-close;
+                    }
+                }
+                
+        }
+        return max;
+    }
+}
