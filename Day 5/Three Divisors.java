@@ -9,3 +9,4 @@ class Solution {
         return ((k==3)?true:false);
         }
     }
+//A number has exactly 3 divisors if and only if it is the square of a prime number.
